@@ -1,0 +1,32 @@
+{
+  "name": "bundle-npm-module-into-one-file",
+  "version": "1.0.0",
+  "description": "in order to use npm modules in the postgres plv8 procedual language, get bundled file and use it directly by coping and pasting.",
+  "main": "index.js",
+  "scripts": {
+    "bundle": "node ./generate-yup-bundle-file",
+    "test": "node ./test-use-yup-bundle.js",
+    "clean": "rm ./yup-bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaosnHsieh/bundle-npm-module-into-one-file.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JaosnHsieh/bundle-npm-module-into-one-file/issues"
+  },
+  "homepage": "https://github.com/JaosnHsieh/bundle-npm-module-into-one-file#readme",
+  "dependencies": {
+    "yup": "^0.26.7",
+    "babel-core": "^6.10.4",
+    "babel-plugin-transform-es2015-modules-umd": "^6.8.0",
+    "babel-plugin-transform-remove-console": "^6.8.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.1.0",
+    "lodash": "^4.13.1"
+  }
+}
